@@ -26,8 +26,8 @@
             Usuários
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Pesquisar todos</a></li>
+            <li><a class="dropdown-item" href="../view/cadUsuario.php">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="../view/visuTudoUsuario.php">Pesquisar todos</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Pesquisar por Código</a></li>
           </ul>
