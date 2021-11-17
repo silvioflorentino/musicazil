@@ -83,15 +83,15 @@ foreach($usuario as $usuarios){
       <th scope="row"><?=$usuarios["Id_Usua"]?></th>
       <td><?=$usuarios["Email_Usua"]?></td>
       <td>
-        <form action="" method="post">
-          <input type="hidden" name="idUsuario" value="<?=$usuarios["Id_Usua"]?>">
+        <form action="../view/formAlterarUsuario.php" method="post">
+          <input type="hidden" name="codUsu" value="<?=$usuarios["Id_Usua"]?>">
           <button type="submit" class="btn btn-primary">Alterar</button>
         </form>
 
       </td>
       <td> 
-      <form action="" method="post">
-          <input type="hidden" name="idUsuario" value="<?=$usuarios["Id_Usua"]?>">
+      <form action="../controller/deletarUsuario.php" method="post">
+          <input type="hidden" name="codUsu" value="<?=$usuarios["Id_Usua"]?>">
           <button type="submit" class="btn btn-danger">Deletar</button>
         </form>
 
