@@ -1,3 +1,15 @@
+<?php
+if ( session_status() !== PHP_SESSION_ACTIVE )
+{
+   session_start();
+}
+
+if(!$_SESSION["emailUsuario"]){
+    $_SESSION["msg"] ="<div class='alert alert-danger' role='alert'>Vc não tem acesso nesta página.</div>";
+    header("Location:../view/logar.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,9 +46,9 @@
         </li>
         
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Digite aqui.." aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+      <form class="d-flex" action="../controller/sair.php">
+        
+        <button class="btn btn-outline-success" type="submit">Sair</button>
       </form>
     </div>
   </div>
